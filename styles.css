@@ -141,16 +141,14 @@ header ul li {
 }
 
 #about-text {
-  margin-left: 2em;
+    margin: 0 2rem;
+    text-align: center;
 }
 
 #about-text h2 {
     margin-bottom: 0.3em;
 }
 
-#about-text p {
-    padding: 0 1em;
-}
 
 /* PRODUCTS */
 
@@ -278,7 +276,7 @@ footer #copy {
 @media screen and (max-width: 768px) {
 
     #banner-image h1 {
-        font-size: 9rem;
+        font-size: 4rem;
     }
 
     #about-container {
@@ -286,12 +284,13 @@ footer #copy {
     }
 
     #about-text p {
-        font-size: 2em;
+        font-size: 1em;
         padding-bottom: 3rem;
+        text-align: center;
     }
 
     #about-text h2 {
-        font-size: 8rem;
+        font-size: 4rem;
     }
 
     #products {
@@ -300,16 +299,20 @@ footer #copy {
     }
 
     #products-container h2 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     .product p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding-bottom: 2rem;
     }
 
     #team-container h2 {
-        font-size: 8rem;
+        font-size: 4rem;
+    }
+
+    .team-member .role {
+        margin-bottom: 2rem;
     }
 
     footer p {
