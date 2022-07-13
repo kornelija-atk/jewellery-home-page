@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: "Qwitcher Grypen", serif;
+    font-size: 4em;
+}
+
+/* HEADER */
+
+#logo-image {
+    max-width: 150px;
+    max-height: auto;
+}
+
+header {
+    width: 100%;
+    max-height: 100vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px 0;
+    box-shadow: 2px 2px 15px #cfc8c2;
+}
+
+header ul {
+    margin: 5px;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:link {
+    color:black;
+}
+
+.nav-link:visited {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: gray;
+}
+
+/* BANNER */
+
+#banner-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./resources/images/banner.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#overlay h1 {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: "Qwitcher Grypen", serif;
+    font-size: 6em;
+}
+
+#banner-button {
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-top: 4vh;
+    box-shadow: 3px 3px darkgray;
+    min-width: 48px;
+    min-height: 40px;
+}
+
+#banner-button:hover {
+    background-color: rgba(243, 243, 243, 0.918);
+    color:rgba(29, 29, 29, 0.5)
+}
+
+#banner-button:active {
+    letter-spacing: 0.1em;
+}
+
+/* ABOUT */
+
+#about-container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+#about-photo img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+#about-text {
+  margin-left: 2em;
+}
+
+#about-text h2 {
+    margin-bottom: 0.3em;
+}
+
+#about-text p {
+    padding: 0 1em;
+}
+
+/* PRODUCTS */
+
+#products-container {
+    background-color: #f1e7e1;
+    padding: 5rem 0;
+}
+
+#products-container h2{
+    margin-bottom: 2rem;
+}
+
+#products {
+    display: flex;
+    padding: 0 20px;
+}
+
+.product {
+    padding: 0 10px;
+}
+
+.product p {
+    margin: 10px 0 0 0;
+    font-style: italic;
+}
+
+#products img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* TEAM */
+
+#team-container {
+    padding: 5rem 0;
+}
+
+#team-container h2 {
+    margin-bottom: 2rem;
+}
+
+#team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#team img {
+    border-radius: 50%;
+    max-width: 20rem;
+    box-shadow: 3px 3px 20px #8d8783;
+}
+
+#team .name {
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+#team .role {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #8d8783;
+    color: white;
+    padding: 2em 0 0 0;
+}
+
+footer #invite {
+    font-family: "Qwitcher Grypen", serif;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+footer label {
+    font-size: 1.5rem;
+}
+
+footer input {
+    margin-top: 1rem;
+    border: none;
+    height: 30px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+footer button {
+    margin-top: 1rem;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-top: 4vh;
+    box-shadow: 3px 3px darkgray;
+    min-width: 48px;
+    min-height: 40px;
+}
+
+footer button:hover {
+    background-color: rgba(243, 243, 243, 0.918);
+    color:rgba(29, 29, 29, 0.5)
+}
+
+footer button:active {
+    letter-spacing: 0.1em;
+}
+
+footer #copy {
+    margin-top: 5rem;
+    text-align: left;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner-image h1 {
+        font-size: 9rem;
+    }
+
+    #about-container {
+        flex-wrap: wrap;
+    }
+
+    #about-text p {
+        font-size: 2em;
+        padding-bottom: 3rem;
+    }
+
+    #about-text h2 {
+        font-size: 8rem;
+    }
+
+    #products {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #products-container h2 {
+        font-size: 7rem;
+    }
+
+    .product p {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #team-container h2 {
+        font-size: 8rem;
+    }
+
+    footer p {
+        font-size: 6rem;
+    }
+
+    footer input {
+        width: 80%;
+        height: 6vh;
+        font-size: 1.3rem;
+    }
+}
